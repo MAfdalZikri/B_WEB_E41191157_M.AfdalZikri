@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -11,9 +13,6 @@
 |
 */
 
-Route::get('/home', function () {
+Route::get("/home", function () {
     return view('home');
 });
-
-Route::get('user', 'ManagementUserController@index');
-//Route::resource('user', 'ManagementUserController');
